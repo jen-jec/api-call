@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="emoji-bg"></div>
+    <div class="container">
+        <h1>Emoji Search App</h1>
+        <input type="text" id="search-input" placeholder="Search for an emoji...">
+        <button onclick="searchEmojis()">Search</button>
+        <button onclick="fetchRandomEmojis()">Random Emojis</button>
+        
+        <div id="emoji-display" class="emoji-grid"></div>
+        
+        <div class="pagination">
+            <button id="prev-btn" onclick="goToPreviousPage()">Previous</button>
+            <button id="next-btn" onclick="goToNextPage()">Next</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
